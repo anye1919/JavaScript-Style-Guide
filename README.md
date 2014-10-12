@@ -315,6 +315,81 @@ function foo(opt_win) {
 }
 ```
 
+##代码块布局
+
+###if 语句
+
+```JavaScript
+if (someCondition) {
+  statements;
+} else if (someOtherCondition) {
+  statements;
+} else {
+  statements;
+}
+```
+
+###for 语句
+
+```JavaScript
+for (initialization; condition; update) {
+  statements;
+}
+```
+
+###while 语句
+
+```JavaScript
+while (!isDone) {
+  doSomething();
+  isDone = moreToDo();
+}
+```
+
+###do-while 语句
+
+```JavaScript
+do {
+  statements;
+} while (condition);
+```
+
+###switch 语句
+
+```JavaScript
+switch (condition) {
+case ABC:
+  statements;
+  // fallthrough
+case DEF:
+  statements;
+  break;
+default:
+  statements;
+  break;
+}
+```
+
+###try-catch 语句
+
+```JavaScript
+try {
+  statements;
+} catch(e) {
+  statements;
+} finally {
+  statements;
+}
+```
+
+###单行的 if-else、while 、for 语句
+
+```JavaScript
+if (condition) { statement; }
+while (condition) { statement; }
+for (intialization; condition; update) { statement; }
+```
+
 ##其它需要注意的地方
 
 - 不要封装基本类型；
