@@ -104,6 +104,33 @@ var myMethod = function() {
 };  
 ```
 
+##空行
+
+使用空行来划分一组逻辑上相关联的代码片段。
+
+```JavaScript
+doSomethingTo(x);
+doSomethingElseTo(x);
+andThen(x);
+
+nowDoSomethingWith(y);
+
+andNowWith(z);
+```
+
+##空格
+
+- 数值操作符（+、-、*、%）两边留空;
+- 赋值操作符（==）两边留一空格;
+- for 循环条件中, 分号后留一空格;
+变量声明语句, 数组值, 对象值及函数参数值中的逗号后留一空格;
+空行不要有空格;
+行尾不要有空格;
+逗号和冒号后一定要跟空格;
+点号前后不要出现空格;
+空对象和数组不需要填入空格;
+函数名末尾和左括号之间不要出现空格;
+
 ##数组和对象的初始化
 
 如果初始值不是很长，就保持写在单行上。
@@ -142,19 +169,7 @@ var obj = {
 };
 ```
 
-##空行
 
-使用空行来划分一组逻辑上相关联的代码片段。
-
-```JavaScript
-doSomethingTo(x);
-doSomethingElseTo(x);
-andThen(x);
-
-nowDoSomethingWith(y);
-
-andNowWith(z);
-```
 
 
 
