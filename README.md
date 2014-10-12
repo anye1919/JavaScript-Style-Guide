@@ -193,7 +193,30 @@ var obj = {
 
 使用单引号 `'` 优于双引号 `"`，当你创建一个包含 HTML 代码的字符串时就知道它的好处了。
 
+###使用 join() 来拼接字符串
 
+```JavaScript
+/* Bad */
+function listHtml(items) {
+  var html = '<div class="foo">';
+  for (var i = 0; i < items.length; ++i) {
+    html += itemHtml(items[i]);
+  }
+  html += '</div>';
+  return html;
+}
+
+/* Good */
+function listHtml(items) {
+  var html = [];
+  for (var i = 0; i < items.length; ++i) {
+    html[i] = itemHtml(items[i]);
+  }
+  return '<div class="foo">' + html.join('') + '</div>';
+}
+```
+
+>由于赋值操作快于数组的 push()，所以尽量使用赋值操作。
 
 
 
@@ -279,30 +302,7 @@ function foo(opt_win) {
 }
 ```
 
-###使用 join() 来拼接字符串
 
-```JavaScript
-/* Bad */
-function listHtml(items) {
-  var html = '<div class="foo">';
-  for (var i = 0; i < items.length; ++i) {
-    html += itemHtml(items[i]);
-  }
-  html += '</div>';
-  return html;
-}
-
-/* Good */
-function listHtml(items) {
-  var html = [];
-  for (var i = 0; i < items.length; ++i) {
-    html[i] = itemHtml(items[i]);
-  }
-  return '<div class="foo">' + html.join('') + '</div>';
-}
-```
-
->由于赋值操作快于数组的 push()，所以尽量使用赋值操作。
 
 
 
