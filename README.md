@@ -85,6 +85,20 @@ return val ? foo() : bar();
 
 ```JavaScript
 /* Bad */
+if (node) {
+  if (node.kids) {
+    foo(node.kids[index]);
+  }
+}
+
+/* Good */
+if (node && node.kids) {
+  foo(node.kids[index]);
+}
+```
+
+```JavaScript
+/* Bad */
 function foo(opt_win) {
   var win;
   if (opt_win) {
