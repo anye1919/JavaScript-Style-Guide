@@ -320,9 +320,9 @@ function foo(opt_win) {
 ###if 语句
 
 ```JavaScript
-if (someCondition) {
+if (condition) {
   statements;
-} else if (someOtherCondition) {
+} else if (otherCondition) {
   statements;
 } else {
   statements;
@@ -405,6 +405,7 @@ for (intialization; condition; update) { statement; }
 ##参考文档
 
 - [Google JavaScript 规范](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+- [Dojo Javascript 编程规范](https://code.google.com/p/grace/wiki/DojoStyle)
 - [JavaScript 编码风格](http://docs.kissyui.com/1.4/docs/html/tutorials/style-guide/js-style-rules.html)
 - [浅谈 JavaScript 编程语言的编码规范](http://www.ibm.com/developerworks/cn/web/1008_wangdd_jscodingrule/)
 
