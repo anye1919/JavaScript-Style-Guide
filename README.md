@@ -218,17 +218,7 @@ function listHtml(items) {
 
 >由于赋值操作快于数组的 push()，所以尽量使用赋值操作。
 
-
-
-
-
-
-
-
-
-##JavaScript 小技巧
-
-###布尔表达式
+##布尔表达式
 
 下面的布尔表达式都返回 false
 - null
@@ -253,7 +243,7 @@ if (x) {
 }
 ```
 
-###三元操作符 (?:)
+##三元操作符 (?:)
 
 ```JavaScript
 /* Bad */
@@ -267,7 +257,7 @@ if (val != 0) {
 return val ? foo() : bar();
 ```
 
-###&& 和 ||
+##&& 和 ||
 
 ```JavaScript
 /* Bad */
@@ -301,15 +291,6 @@ function foo(opt_win) {
   // do something...
 }
 ```
-
-
-
-
-
-
-
-
-
 
 ##参考文档
 
