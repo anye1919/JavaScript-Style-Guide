@@ -129,7 +129,7 @@ andNowWith(z);
 
 ```JavaScript
 /* Bad */
-funtion myMethod (){
+function myMethod (){
   var c=a+b;
   var arr=[0,1,2];
   for(var i=0;i<arr.length;i++){
@@ -138,7 +138,7 @@ funtion myMethod (){
 }
 
 /* Good */
-funtion myMethod() {
+function myMethod() {
   var c = a + b;
   var arr = [0, 1, 2];
   for (var i = 0; i < arr.length; i++) {
