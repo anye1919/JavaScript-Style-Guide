@@ -1,9 +1,23 @@
 JavaScript 编码规范
 ===================
 
-##js 文件命名
+##命名
 
-js 文件名应全部小写，用中划线 `-` 分隔单词，用点号 `.`连接版本号，如：`app-core-1.0.js`。
+通常的命名形式：functionNamesLikeThis，variableNamesLikeThis，ClassNamesLikeThis，EnumNamesLikeThis，methodNamesLikeThis，CONSTANTS_NAME_LIKE_THIS。
+
+- 文件或类中的 *私有* 属性，变量和方法名应该以下划线 `_` 开头；
+- 方法的可选参数以 `opt_` 开头；
+- getter 和 setter 方法命名成 getFoo()、setFoo() 的形式，布尔类型的 getter 方法使用 isFoo() 也可以；
+- 文件名应使用小写字符，用中划线 `-` 分隔单词，用点号 `.`连接版本号，如：`app-core-1.0.js`；
+- 为全局代码使用命名空间；
+
+```JavaScript
+var app = {};
+
+app.init = function() {
+  // do something...
+};
+```
 
 ##js 文件引用
 
@@ -46,7 +60,7 @@ var myMethod = function() {
   // do something...
 };  
 ```
- 
+
 ##JavaScript 小技巧
 
 ###布尔表达式
