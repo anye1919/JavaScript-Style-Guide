@@ -32,6 +32,7 @@ app.init = function() {
 - 声明变量必须加上 `var` 关键字，这样可以有效避免因局部变量和全局变量同名而产生的错误；
 - 函数体中，多个局部变量集中在函数体的顶部声明，避免分散；
 - 尽量减少声明全局变量；
+- 没必要在每次声明变量时就将其初始化；
 - 避免使用 `new` 关键字声明数组或对象；
 
 ```JavaScript
@@ -321,9 +322,11 @@ function foo(opt_win) {
 - 不要使用 with；
 - 仅在函数内使用 this；
 - 避免修改内置对象的原型；
+- for-in 循环只用于 object/map/hash 的遍历；
 
 ##参考文档
 
 - [Google JavaScript 规范](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+- [JavaScript 编码风格](http://docs.kissyui.com/1.4/docs/html/tutorials/style-guide/js-style-rules.html)
 - [浅谈 JavaScript 编程语言的编码规范](http://www.ibm.com/developerworks/cn/web/1008_wangdd_jscodingrule/)
 
