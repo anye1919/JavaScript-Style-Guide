@@ -47,7 +47,7 @@ var obj = {};
 ##括号
 
 不要滥用括号，只在必要的时候使用它。  
-对于一元操作符(如`delete`,`typeof`,`void` )，或是在某些关键词(如 `return`,`throw`,`case`,`new` )之后，不要使用括号。
+对于一元操作符(`delete`, `typeof`, `void`)，或是在某些关键词(`return`, `throw`, `case`, `new`)之后，不要使用括号。
 
 ##大括号
 
