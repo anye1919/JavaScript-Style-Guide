@@ -25,6 +25,51 @@ var b = 2
 var a = 1;
 var b = 2;
 ```
+```JavaScript
+/* Bad */
+var a = 1
+var b = 2
+
+/* Good */
+var a = 1;
+var b = 2;
+```
+
+##JavaScript 小技巧
+
+###布尔表达式
+
+下面的布尔表达式都返回 false
+- null
+- undefined
+- '' 空字符串
+- 0 数字0
+
+而下面的都返回 true
+- '0' 字符串0
+- [] 空数组
+- {} 空对象
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ##参考文档
 
