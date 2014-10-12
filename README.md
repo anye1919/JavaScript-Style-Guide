@@ -110,7 +110,8 @@ var inset = {
   left: 12
 };
 ```
-比较长的标识符或者数值, 不要为了让代码好看些而手工对齐：
+
+比较长的标识符或者数值，不要为了让代码好看些而手工对齐：
 
 ```JavaScript
 /* Bad */
@@ -128,7 +129,19 @@ var obj = {
 };
 ```
 
+##空行
 
+- 使用空行来划分一组逻辑上相关联的代码片段；
+
+```JavaScript
+doSomethingTo(x);
+doSomethingElseTo(x);
+andThen(x);
+
+nowDoSomethingWith(y);
+
+andNowWith(z);
+```
 
 
 
