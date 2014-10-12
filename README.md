@@ -324,6 +324,8 @@ function foo(opt_win) {
 - for-in 循环只用于 object/map/hash 的遍历；
 - 使用严格的条件判断符，用 `===` 代替 `==`，用 `!==` 代替 `!=`；
 - 类的构造器的首字母大写；
+- 重复变量建议使用 "i", "j", "k" （依次类推）等名称的变量；
+- 补充用语必须使用补充词，例如： get/set, add/remove, create/destroy, start/stop, insert/delete, begin/end, etc.
 
 ##参考文档
 
