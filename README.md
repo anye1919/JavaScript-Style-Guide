@@ -321,7 +321,13 @@ function foo(opt_win) {
 
 ```JavaScript
 function foo() {
-	statements;
+  statements;
+}
+
+or
+
+var foo = function () {
+  statements;
 }
 ```
 
