@@ -44,6 +44,26 @@ var arr = [];
 var obj = {};
 ```
 
+##函数声明
+
+不要在块内声明一个函数，如果确实需要在块中定义函数，建议使用函数表达式来初始化变量。
+
+```JavaScript
+/* Bad */
+if (x) {
+  function foo() {
+    // do something
+  }
+}
+
+/* Good */
+if (x) {
+  var foo = function() {
+    // do something
+  };
+}
+```
+
 ##括号
 
 不要滥用括号，只在必要的时候使用它。  
