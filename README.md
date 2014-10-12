@@ -1,10 +1,14 @@
 JavaScript 编码规范
 ===================
 
-##JavaScript 文件引用
+##JS 文件引用
 
 为了加快页面载入速度，尽量避免在 HTML 文件中直接编写 JavaScript 代码，因为这样会大大增加 HTML 文件的大小，
 应在 `body` 标签最底下引入 `<script src="filename.js"></script>` 标签，`script` 标签的 `type` 属性是非必要的。
+
+##JS 文件命名
+
+
 
 ##变量
 
@@ -25,7 +29,7 @@ var b = 2
 var a = 1;
 var b = 2;
 ```
-如果你不这么做，有时会出现意想不到的错误。
+如果你不这么做，有时会出现意想不到的错误：
 ```JavaScript
 /* Bad */
 var a = 1
@@ -77,8 +81,24 @@ if (val != 0) {
 return val ? foo() : bar();
 ```
 
+###&& 和 ||
 
+```JavaScript
+/* Bad */
+function foo(opt_win) {
+  var win;
+  if (opt_win) {
+    win = opt_win;
+  } else {
+    win = window;
+  }
+}
 
+/* Good */
+function foo(opt_win) {
+  var win = opt_win || window;
+}
+```
 
 
 
