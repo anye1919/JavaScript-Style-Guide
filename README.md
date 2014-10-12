@@ -1,19 +1,22 @@
 JavaScript 编码规范
 ===================
 
+##js 文件命名
+
+文件名应使用小写字符，用中划线 `-` 分隔单词，用点号 `.`连接版本号，如：`app-core-1.0.js`；
+
 ##js 文件引用
 
 为了加快页面载入速度，尽量避免在 HTML 文件中直接编写 JavaScript 代码，因为这样会大大增加 HTML 文件的大小，
 应在 `body` 标签最底下引入 `<script src="filename.js"></script>` 标签，`script` 标签的 `type` 属性是非必要的。
 
-##命名
+##变量、方法命名
 
-通常的命名形式：functionNamesLikeThis，variableNamesLikeThis，ClassNamesLikeThis，EnumNamesLikeThis，methodNamesLikeThis，CONSTANTS_NAME_LIKE_THIS。
+通常的命名形式：variableNamesLikeThis，methodNamesLikeThis，ClassNamesLikeThis，CONSTANTS_NAME_LIKE_THIS。
 
 - 文件或类中的 *私有* 属性，变量和方法名应该以下划线 `_` 开头；
 - 方法的可选参数以 `opt_` 开头；
 - getter 和 setter 方法命名成 getFoo()、setFoo() 的形式，布尔类型的 getter 用 isFoo() 也行；
-- 文件名应使用小写字符，用中划线 `-` 分隔单词，用点号 `.`连接版本号，如：`app-core-1.0.js`；
 - 为全局代码使用命名空间；
 
 ```JavaScript
@@ -29,7 +32,6 @@ app.init = function() {
 - 声明变量必须加上 `var` 关键字，这样可以有效避免因局部变量和全局变量同名而产生的错误；
 - 函数体中，多个局部变量集中在函数体的顶部声明，避免分散；
 - 尽量减少全局变量的使用；
-- 常量的命名如：NAMES_LIKE_THIS；
 
 ##分号
 
