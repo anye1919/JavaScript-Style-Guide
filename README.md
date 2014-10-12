@@ -116,9 +116,30 @@ function foo(opt_win) {
 }
 ```
 
+###使用 join() 来拼接字符串
 
+- 由于赋值操作快于数组的 push(), 所以尽量使用赋值操作；
 
+```JavaScript
+/* Bad */
+function listHtml(items) {
+  var html = '<div class="foo">';
+  for (var i = 0; i < items.length; ++i) {
+    html += itemHtml(items[i]);
+  }
+  html += '</div>';
+  return html;
+}
 
+/* Good */
+function listHtml(items) {
+  var html = [];
+  for (var i = 0; i < items.length; ++i) {
+    html[i] = itemHtml(items[i]);
+  }
+  return '<div class="foo">' + html.join('') + '</div>';
+}
+```
 
 
 
