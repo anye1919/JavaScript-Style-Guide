@@ -25,6 +25,7 @@ var b = 2
 var a = 1;
 var b = 2;
 ```
+如果你不这么做，有时会出现意想不到的错误。
 ```JavaScript
 /* Bad */
 var a = 1
@@ -62,9 +63,18 @@ if (x) {
 }
 ```
 
+###三元操作符 (?:)
 
+/* Bad */
+if (val != 0) {
+  return foo();
+} else {
+  return bar();
+}
 
-
+/* Good */
+return val ? foo() : bar();
+```
 
 
 
