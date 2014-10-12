@@ -32,6 +32,17 @@ app.init = function() {
 - 声明变量必须加上 `var` 关键字，这样可以有效避免因局部变量和全局变量同名而产生的错误；
 - 函数体中，多个局部变量集中在函数体的顶部声明，避免分散；
 - 尽量减少声明全局变量；
+- 避免使用 `new` 关键字声明数组或对象；
+
+```JavaScript
+/* Bad */
+var arr = new Array();
+var obj = new Object();
+
+/* Good */
+var arr = [];
+var obj = {};
+```
 
 ##大括号
 
@@ -74,6 +85,43 @@ var myMethod = function() {
   // do something...
 };  
 ```
+
+##数组和对象的初始化
+
+如果初始值不是很长，就保持写在单行上：
+
+```JavaScript
+var arr = [1, 2, 3];  // No space after [ or before ]
+var obj = {a: 1, b: 2, c: 3};  // No space after { or before }
+```
+
+初始值占用多行时，缩进2个空格：
+
+```JavaScript
+var inset = {
+  top: 10,
+  right: 20,
+  bottom: 15,
+  left: 12
+};
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ##JavaScript 小技巧
 
