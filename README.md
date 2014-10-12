@@ -12,7 +12,19 @@ JavaScript 编码规范
 - 尽量减少全局变量的使用；
 - 常量的命名如：NAMES_LIKE_THIS；
 
+##分号
 
+- 总是使用分号结束一句语句；
+
+```JavaScript
+/* Bad */
+var a = 1
+var b = 2
+
+/* Good */
+var a = 1;
+var b = 2;
+```
 
 ##参考文档
 
