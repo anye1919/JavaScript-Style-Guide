@@ -12,11 +12,11 @@ JavaScript 编码规范
 
 ##变量方法命名
 
-通常的命名形式：variableNamesLikeThis，methodNamesLikeThis，ClassNamesLikeThis，CONSTANTS_NAME_LIKE_THIS。
+通常的命名形式：variableNamesLikeThis，methodNamesLikeThis，ClassNamesLikeThis，CONSTANTS_NAMES_LIKE_THIS。
 
 - 文件或类中的 *私有* 属性，变量和方法名应该以下划线 `_` 开头；
 - 方法的可选参数以 `opt_` 开头；
-- getter 和 setter 方法命名成 `getFoo()``setFoo()` 的形式，布尔类型的 getter 用 `isFoo()` 也可以；
+- getter 和 setter 方法命名成 `getFoo()` `setFoo()` ，布尔类型的 getter 用 `isFoo()` 也可以；
 - 为全局代码使用命名空间；
 
 ```JavaScript
