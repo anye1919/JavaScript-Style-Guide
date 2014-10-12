@@ -1,7 +1,3 @@
-JavaScript-Style-Guide
-======================
-
-JavaScript 编码规范
 JavaScript 编码规范
 ===================
 
