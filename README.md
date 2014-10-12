@@ -49,6 +49,14 @@ var obj = {};
 不要滥用括号，只在必要的时候使用它。  
 对于一元操作符(`delete`, `typeof`, `void`)，或是在某些关键词(`return`, `throw`, `case`, `new`)之后，不要使用括号。
 
+```JavaScript
+/* Bad */
+return (x == 'something' ? x : '');
+
+/* Good */
+return x == 'something' ? x : '';
+```
+
 ##大括号
 
 分号会被隐式插入到代码中，为了减少编译错误，务必在同一行插入大括号。
