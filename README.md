@@ -29,15 +29,15 @@ var b = 2
 var a = 1;
 var b = 2;
 ```
-如果你不这么做，有时会出现意想不到的错误：
-```JavaScript
-/* Bad */
-var a = 1
-var b = 2
+- 函数表达式必须用分号结束，如果你不这么做，有时会出现意想不到的错误；
 
-/* Good */
-var a = 1;
-var b = 2;
+```JavaScript
+var myMethod = function() {
+  return 42;
+}    
+(function() {
+  // 一个匿名函数，在这里会被错误解析当作参数调用导致报错
+})();
 ```
 
 ##JavaScript 小技巧
