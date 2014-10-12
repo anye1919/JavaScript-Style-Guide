@@ -312,6 +312,14 @@ function foo(opt_win) {
 }
 ```
 
+##其他需要注意的地方
+
+- 不要封装基本类型；
+- 避免使用 eval；
+- 不要使用 with；
+- 仅在函数内使用 this；
+- 避免修改内置对象的原型；
+
 ##参考文档
 
 - [Google JavaScript 规范](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
