@@ -16,7 +16,7 @@ JavaScript 编码规范
 
 - 文件或类中的 *私有* 属性，变量和方法名应该以下划线 `_` 开头；
 - 方法的可选参数以 `opt_` 开头；
-- getter 和 setter 方法命名成 getFoo()、setFoo() 的形式，布尔类型的 getter 用 isFoo() 也行；
+- getter 和 setter 方法命名成 `getFoo()`、`setFoo()` 的形式，布尔类型的 getter 用 `isFoo()` 也可以；
 - 为全局代码使用命名空间；
 
 ```JavaScript
