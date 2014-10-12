@@ -65,6 +65,7 @@ if (x) {
 
 ###三元操作符 (?:)
 
+```JavaScript
 /* Bad */
 if (val != 0) {
   return foo();
