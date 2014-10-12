@@ -3,14 +3,14 @@ JavaScript 编码规范
 
 ##js 文件命名
 
-文件名应使用小写字符，用中划线 `-` 分隔单词，用点号 `.`连接版本号，如：`app-core-1.0.js`；
+文件名应使用小写字符，用中划线 `-` 分隔单词，用点号 `.`连接版本号，如：`app-core-1.0.js`。
 
 ##js 文件引用
 
 为了加快页面载入速度，尽量避免在 HTML 文件中直接编写 JavaScript 代码，因为这样会大大增加 HTML 文件的大小，
 应在 `body` 标签最底下引入 `<script src="filename.js"></script>` 标签，`script` 标签的 `type` 属性是非必要的。
 
-##变量、方法命名
+##变量方法命名
 
 通常的命名形式：variableNamesLikeThis，methodNamesLikeThis，ClassNamesLikeThis，CONSTANTS_NAME_LIKE_THIS。
 
