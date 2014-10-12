@@ -33,14 +33,20 @@ var b = 2;
 - **函数表达式** 必须用分号结束，如果你不这么做，有时会出现意想不到的错误；
 
 ```JavaScript
+/* Bad */
 var myMethod = function() {
-  return 42;
+  // do something...
 }    
 (function() {
   // 一个匿名函数，在这里会被错误解析当作 myMethod 的参数调用导致报错
 })();
-```
 
+/* Good */
+var myMethod = function() {
+  // do something...
+};  
+```
+ 
 ##JavaScript 小技巧
 
 ###布尔表达式
