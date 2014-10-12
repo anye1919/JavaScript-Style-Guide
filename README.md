@@ -50,7 +50,17 @@ var b = 2;
 - [] 空数组
 - {} 空对象
 
+```JavaScript
+/* Bad */
+if (x != null) {
+	// do something...
+}
 
+/* Good */
+if (x) {
+	// do something...
+}
+```
 
 
 
