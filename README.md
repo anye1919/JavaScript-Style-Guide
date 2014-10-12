@@ -10,10 +10,12 @@ JavaScript 编码规范
 
 - 声明变量必须加上 `var` 关键字，这样可以有效避免因局部变量和全局变量同名而产生的错误；
 - 尽量减少全局变量的使用；
+- 常量的命名如：NAMES_LIKE_THIS；
 
 
 
 ##参考文档
 
+- [Google JavaScript 规范](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 - [浅谈 JavaScript 编程语言的编码规范](http://www.ibm.com/developerworks/cn/web/1008_wangdd_jscodingrule/)
 
