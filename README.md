@@ -326,7 +326,7 @@ function foo() {
 
 or
 
-var foo = function () {
+var foo = function() {
   statements;
 }
 ```
