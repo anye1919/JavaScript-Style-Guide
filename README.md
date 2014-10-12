@@ -36,8 +36,8 @@ app.init = function() {
 
 ```JavaScript
 /* Bad */
-var arr = new Array();
-var obj = new Object();
+var arr = new Array;
+var obj = new Object;
 
 /* Good */
 var arr = [];
@@ -49,10 +49,15 @@ var obj = {};
 - 分号会被隐式插入到代码中, 所以务必在同一行插入大括号；
 
 ```JavaScript
-if (something) {
-  // ...
-} else {
-  // ...
+/* Bad */
+if (x) 
+{
+  // do something...
+}
+
+/* Good */
+if (x) {
+  // do something...
 }
 ```
 
