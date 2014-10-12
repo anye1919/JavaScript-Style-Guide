@@ -92,11 +92,13 @@ function foo(opt_win) {
   } else {
     win = window;
   }
+  // do something...
 }
 
 /* Good */
 function foo(opt_win) {
   var win = opt_win || window;
+  // do something...
 }
 ```
 
