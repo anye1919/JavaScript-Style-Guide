@@ -120,12 +120,32 @@ andNowWith(z);
 
 ##空格
 
-- 数值操作符 `+`、`-`、`*`、`%` 两边留空；
-- 赋值操作符 `==` 两边留一空格；
+- 数值操作符 `+`、`-`、`*`、`%` 两边留一空格；
+- 赋值操作符 `=` 两边留一空格；
 - for 循环条件中，分号后留一空格；
 - 变量声明语句，数组值，对象值及函数参数值中的逗号后留一空格；
 - 逗号和冒号后一定要跟空格；
 - 函数名和左括号之间不要出现空格；
+
+```JavaScript
+/* Bad */
+funtion myMethod (){
+  var c=a+b;
+  var arr=[0,1,2];
+  for(var i=0;i<arr.length;i++){
+    // do something
+  }
+}
+
+/* Good */
+funtion myMethod() {
+  var c = a + b;
+  var arr = [0, 1, 2];
+  for (var i = 0; i < arr.length; i++) {
+    // do something
+  }
+}
+```
 
 ##缩进
 
