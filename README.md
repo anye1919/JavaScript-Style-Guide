@@ -317,6 +317,14 @@ function foo(opt_win) {
 
 ##代码块布局
 
+###function
+
+```JavaScript
+function foo() {
+	statements;
+}
+```
+
 ###if 语句
 
 ```JavaScript
